@@ -72,6 +72,11 @@ url="wss://${apiId}.execute-api.us-east-1.amazonaws.com/v1"
 echo $url
 
 # -----------------------------------------------------------------
+# Install wscat to test the websockets
+# -----------------------------------------------------------------
+npm install -g wscat
+
+# -----------------------------------------------------------------
 # Invoke the URL to test the response
 # -----------------------------------------------------------------
 echo "Type anything to send up to the server and you will see an echo message"
