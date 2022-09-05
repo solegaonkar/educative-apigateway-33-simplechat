@@ -43,7 +43,7 @@ RAND=$(dd if=/dev/random bs=8 count=1 2>/dev/null | od -An -tx1 | tr -d ' \t\n')
 # -----------------------------------------------------------------
 # Build the zip file that we want to deploy. At this point, we include the index.js in our 
 # -----------------------------------------------------------------
-zip -r ${RAND}.zip index.js node_modules
+zip -r ${RAND}.zip index.js
 
 # -----------------------------------------------------------------
 # Upload the lambda zip file to the S3 bucket. 
